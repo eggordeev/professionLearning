@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="#77ff0000"
+            android:visibility="visible"
+            android:id="@+id/relative_layout_code_profession"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <RelativeLayout
+                android:id="@+id/relative_layout_enter_profession_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_button_enter_code"/>
+            <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Введите код доступа для обучения профессии 1(2)"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_layout_input_text"
+                android:layout_below="@id/relative_layout_enter_profession_code">
+            <EditText
+                    android:id="@+id/edit_text_enter_profession_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="введите код профессии"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/relative_layout_button_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout_input_text">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_button_enter"
+                    android:layout_centerInParent="true"
+                    android:onClick="enterClick"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Ввод"
+                    android:onClick="enterClick"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/relative_layout_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/relative_layout_button_enter"
+                android:layout_alignTop="@id/relative_layout_button_enter">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_button_cancel"
+                    android:onClick="cancelClick"/>
+            <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Отмена"
+                    android:onClick="cancelClick"/>
+
+        </RelativeLayout>
+    </RelativeLayout>

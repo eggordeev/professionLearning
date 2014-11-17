@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:id="@+id/relative_layout_slide_show"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageSwitcher
+                android:id="@+id/image_switcher"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                />
+        <ImageButton
+                android:layout_alignParentBottom="true"
+                android:id="@+id/image_button_prev_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_previous"
+                android:layout_centerHorizontal="true"/>
+        <ImageButton
+                android:src="@drawable/image_button_next"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/image_button_next_slide"
+                android:layout_toRightOf="@id/image_button_prev_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
